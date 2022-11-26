@@ -17,13 +17,12 @@ import java.io.IOException;
 public class SendService {
 
     @Value("${producer.url}")
-    private String url; //FIXME Não carrega o valor do producer.url do application.yml
+    private String url;
 
     public void post(DroneStatus droneStatus) {
         try (CloseableHttpClient httpClient = HttpClients.createDefault()){
 
-            //HttpPost httpPost = new HttpPost(this.url);
-            HttpPost httpPost = new HttpPost("http://localhost:8080/drone/report/status");  //FIXME Remover após solucionar o problema do application.yml
+            HttpPost httpPost = new HttpPost(this.url);
             httpPost.setEntity(new StringEntity(droneStatus.toString()));
             httpPost.setHeader("accept", String.valueOf(ContentType.APPLICATION_JSON));
             httpPost.setHeader("content-type", String.valueOf(ContentType.APPLICATION_JSON));

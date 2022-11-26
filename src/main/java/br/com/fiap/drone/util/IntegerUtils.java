@@ -7,8 +7,9 @@ import java.util.Random;
 @Component
 public final class IntegerUtils {
 
-    public static int geneteRandNumber(int min, int max) {
+    public static int generateRandNumber(int min, int max) {
         Random r = new Random();
         return r.nextInt(max-min) + min;
     }
+
 }

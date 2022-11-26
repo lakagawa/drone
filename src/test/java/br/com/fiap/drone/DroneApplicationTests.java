@@ -2,13 +2,18 @@ package br.com.fiap.drone;
 
 import br.com.fiap.drone.service.GenerateRandomData;
 import br.com.fiap.drone.service.SendService;
-import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@Slf4j
 @SpringBootTest
 class DroneApplicationTests {
+
+	@Autowired
+	private GenerateRandomData generateRandomData;
+
+	@Autowired
+	private SendService sendService;
 
 	@Test
 	void contextLoads() {
@@ -16,14 +21,14 @@ class DroneApplicationTests {
 
 	@Test
 	void testGenerateJsonDroneStatus() {
-		System.out.println("TESTE json: " + new GenerateRandomData().getData().toString());
+		System.out.println("JSON: " + generateRandomData.getData().toString());
 	}
 
 	@Test
 	void testSendToProducerDroneStatus() {
-		var data = new GenerateRandomData().getData();
+		var data = generateRandomData.getData();
 		data.setRastreamento(true);
-		new SendService().post(data);
+		sendService.post(data);
 	}
 
 }

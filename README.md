@@ -4,7 +4,7 @@
 
 ## OVERVIEW
 
-![Overview](docs/images/overview.PNG)
+![Overview](/docs/images/overview.PNG)
 
 ---
 
