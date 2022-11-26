@@ -1,1 +1,6 @@
-  id_drone: DRONE_1232342123
+drone:
+  id: "DRONE1232342123"
+  rastreamento: "true"
+
+producer:
+  url: "http://localhost:8080/drone/report/status"
