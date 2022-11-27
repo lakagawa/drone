@@ -20,6 +20,7 @@
 ### REPOSITÓRIOS RELACIONADOS
 
 - https://github.com/zanella86/producer
+- https://github.com/jhowlacerda/consumer
 
 ---
 
@@ -33,8 +34,13 @@
 
 ## PARA TESTAR
 
+(!) Em construção... 
+- Chamada Simples
+- Chamada Múltiplas
 
-#### FONTES
+---
 
-- https://www.baeldung.com/httpclient-post-http-request
-- https://www.educative.io/answers/different-ways-to-convert-a-json-string-to-a-json-object-in-java
+#### REFERÊNCIAS
+
+- [HTTP Client - POST Request](https://www.baeldung.com/httpclient-post-http-request)
+- [Convert a String into JSON Object](https://www.educative.io/answers/different-ways-to-convert-a-json-string-to-a-json-object-in-java)
