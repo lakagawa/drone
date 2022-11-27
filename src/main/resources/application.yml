@@ -1,6 +1,7 @@
 drone:
-  id: "DRONE1232342123"
+  id: "DRONE_001"
   rastreamento: "true"
+  intervalo_envio: 10000
 
 producer:
   url: "http://localhost:8080/drone/report/status"

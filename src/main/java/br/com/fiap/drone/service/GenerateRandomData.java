@@ -9,20 +9,20 @@ import static br.com.fiap.drone.util.IntegerUtils.*;
 @Component
 public class GenerateRandomData {
     @Value("${drone.id}")
-    private String idDrone; //FIXME Não carrega o valor do drone.id do application.yml
+    private String idDrone;
 
     @Value("${drone.rastreamento}")
-    private boolean rastreamento;   //FIXME Não carrega o valor do drone.rastreamento do application.yml
+    private boolean rastreamento;
 
     public DroneStatus getData() {
 
         return DroneStatus.builder()
                 .idDrone(idDrone)
-                .umidade(geneteRandNumber(0, 100))
-                .temperatura(geneteRandNumber(-25, 40))
+                .umidade(generateRandNumber(0, 100))
+                .temperatura(generateRandNumber(-25, 40))
                 .rastreamento(rastreamento)
-                .latitude(String.valueOf(geneteRandNumber(-1000000, 1000000)))
-                .longitude(String.valueOf(geneteRandNumber(-1000000, 1000000)))
+                .latitude(String.valueOf(generateRandNumber(-1000000, 1000000)))
+                .longitude(String.valueOf(generateRandNumber(-1000000, 1000000)))
                 .build();
     }
 
