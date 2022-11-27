@@ -27,7 +27,6 @@ class DroneApplicationTests {
 	@Test
 	void testSendToProducerDroneStatus() {
 		var data = generateRandomData.getData();
-		data.setRastreamento(true);
 		sendService.post(data);
 	}
 

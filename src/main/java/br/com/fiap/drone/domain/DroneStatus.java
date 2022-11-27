@@ -16,7 +16,6 @@ public class DroneStatus implements Serializable {
     private String longitude;
     private int temperatura;
     private int umidade;
-    private boolean rastreamento;
 
     @Override
     public String toString() {
