@@ -12,8 +12,8 @@ import java.io.Serializable;
 @AllArgsConstructor
 public class DroneStatus implements Serializable {
     private String idDrone;
-    private String latitude;
-    private String longitude;
+    private double latitude;
+    private double longitude;
     private int temperatura;
     private int umidade;
 

@@ -28,6 +28,7 @@ public class SendService {
             httpPost.setHeader("content-type", String.valueOf(ContentType.APPLICATION_JSON));
             httpClient.execute(httpPost);
 
+            log.info(droneStatus.toString());
         } catch (IOException e) {
             log.error(e.getMessage(), e);
         }
