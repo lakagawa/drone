@@ -4,7 +4,7 @@ import br.com.fiap.drone.domain.DroneStatus;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import static br.com.fiap.drone.util.IntegerUtils.*;
+import static br.com.fiap.drone.util.RandomValueUtils.*;
 
 @Component
 public class GenerateRandomData {
@@ -17,8 +17,8 @@ public class GenerateRandomData {
                 .idDrone(idDrone)
                 .umidade(generateRandNumber(0, 100))
                 .temperatura(generateRandNumber(-25, 40))
-                .latitude(String.valueOf(generateRandNumber(-90, 90)))
-                .longitude(String.valueOf(generateRandNumber(-180, 180)))
+                .latitude(generateRandNumber(-90.0, 90.0))
+                .longitude(generateRandNumber(-180.0, 180.0))
                 .build();
     }
 
