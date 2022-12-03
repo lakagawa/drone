@@ -34,9 +34,17 @@
 
 ## PARA TESTAR
 
-(!) Em construção... 
-- Chamada Simples
-- Chamada Múltiplas
+### Configure o ambiente
+
+#### Versão do Java
+![JDK](docs/images/config_java.PNG)
+![Gradle](docs/images/config_gradle01.PNG)
+
+#### Execução com o spring boot/gradle (chamada simples)
+![Gradle](docs/images/config_gradle02.PNG)
+
+#### Execução com o script "cockpit" (chamadas múltiplas)
+- Verifique os procedimentos neste [link](cockpit/README.md)
 
 ---
 
