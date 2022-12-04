@@ -4,7 +4,13 @@
 
 ## Como gerar o pacote
 
+Clicar no dropdown do tipo de execução -> Edit Configurations
+![GenerateJar](../docs/images/config_cockpit_run_edit.PNG)
+
+Do lado esquerdo onde tem as configurações do run, pode criar um novo, duplicar ou editar.
+A opção a selecionar no RUN como grifado abaixo é bootJar
 ![GenerateJar](../docs/images/config_jar_ide_intellig.PNG)
+Não esquecer de clicar em apply.
 
 ---
 
